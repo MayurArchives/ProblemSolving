@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class day1_ques2 {
+public class day2_ques2 {
     public static void main(String[] arg) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
