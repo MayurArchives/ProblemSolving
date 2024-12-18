@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class day20_ques3 {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        String s1= sc.nextLine();
+        String s2= sc.nextLine();
+         System.out.println(isToggleString(s1,s2));
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+    public static boolean isToggleString(String s1,String s2){
+        if(s1.length()!=s2.length()){
+            return false;
+        }
+        for(int i=0; i<s1.length();i++){
+            char ch1= s1.charAt(i);
+             char ch2= s2.charAt(i);
+            if(!(Character.toUpperCase(ch1)==Character.toUpperCase(ch2)&& ch1!=ch2)){
+                return false;
+            }
+        }
+        return true;
+    }
+}
