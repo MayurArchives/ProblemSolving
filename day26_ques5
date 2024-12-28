@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class day26_ques5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        int left = 0;
+        int right = n;
+        int ans = -1;
+        
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            
+            if (mid * mid == n) {
+                ans = mid;  // Exact square root found
+                break;
+            } else if (mid * mid < n) {
+                ans = mid;  // Store the value of mid as a potential answer
+                left = mid + 1; 
+            } else {
+                right = mid - 1;  
+            }
+        }
+        
+        System.out.println(ans);
+    }
+}
