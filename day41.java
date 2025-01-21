@@ -13,6 +13,7 @@ public class day41 {
         }
         int maxFreq = 0;
         int result = 0;
+
         for (int i = 0; i < 10; i++) {
             if (freq[i] > maxFreq) {
                 maxFreq = freq[i];
