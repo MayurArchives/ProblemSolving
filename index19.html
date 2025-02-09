@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <title>tailwindHW1.1</title>
+</head>
+
+<body>
+    <div class="wrapper max-w-xl mx-auto my-14 shadow-lg overflow-hidden relative">
+        <header class="flex flex-col justify-center items-center bg-black gap-2 py-4">
+            <h1 class="text-white font-semibold text-2xl">Retro Shoe</h1>
+            <div class="flex gap-2 text-base">
+                <h4 class="text-white font-semibold">$89.00</h4>
+                <p class="text-teal-400">IN STOCK</p>
+            </div>
+        </header>
+        <main class="flex p-4 gap-4 justify-between">
+            <div class="w-[10rem] h-[13rem] shadow-[5px_5px_rgba(0,128,128,1)] absolute top-4 left-8"> <img
+                    class="object-cover w-full h-full" src="assets/shoes.jpg" alt=""></div>
+            <!-- Placeholder for image -->
+            <div></div>
+            <div class="flex flex-col gap-4 w-[61%]">
+                <ul class="flex gap-2 flex-wrap">
+                    <li
+                        class="flex justify-center items-center w-10 h-10 bg-black text-white text-sm shadow-[3px_3px_rgba(0,128,128,1)] hover:bg-black hover:text-white">
+                        <a href="">XS</a>
+                    </li>
+                    <li
+                        class="flex justify-center items-center w-10 h-10 bg-gray-100 text-sm hover:bg-black hover:text-white hover:shadow-[3px_3px_rgba(0,128,128,1)]">
+                        <a href="">S</a>
+                    </li>
+                    <li
+                        class="flex justify-center items-center w-10 h-10 bg-gray-100 text-sm hover:bg-black hover:text-white hover:shadow-[3px_3px_rgba(0,128,128,1)]">
+                        <a href="">M</a>
+                    </li>
+                    <li
+                        class="flex justify-center items-center w-10 h-10 bg-gray-100 text-sm hover:bg-black hover:text-white hover:shadow-[3px_3px_rgba(0,128,128,1)]">
+                        <a href="">L</a>
+                    </li>
+                    <li
+                        class="flex justify-center items-center w-10 h-10 bg-gray-100 text-sm hover:bg-black hover:text-white hover:shadow-[3px_3px_rgba(0,128,128,1)]">
+                        <a href="">XL</a>
+                    </li>
+                </ul>
+                <div class="flex gap-2 items-center">
+                    <button class="px-4 py-2 bg-teal-500 font-semibold text-sm border-black border-[2px]">BUY
+                        NOW</button>
+                    <button
+                        class="px-4 py-2 bg-white font-semibold text-sm border-[rgba(0,0,0,0.5)] border-[1px] hover:bg-teal-500 hover:border-black hover:border-[2px]">ADD
+                        TO BAG</button>
+                    <i class="fa-solid fa-heart hover:text-red-600 ml-4"></i>
+                </div>
+                <p class="text-xs text-gray-600">Free shipping on all continental US orders.</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
