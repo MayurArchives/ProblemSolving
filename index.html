@@ -4,19 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Interactive Index</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 25px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background: white;
+            color: #ff5e62;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome </h1>
+
+    <h1>Welcome</h1>
     <p>Choose a file to view:</p>
     <ul>
-
-        <li><a href="index19.html">shoes</a></li>
-        <li><a href="index20.html">chai studio</a></li>
-        <li><a href="index21.html">winters</a></li>
+        <li><a href="index19.html">Shoes</a></li>
+        <li><a href="index20.html">Chai Studio</a></li>
+        <li><a href="index21.html">Winters</a></li>
+        <li><a href="DOMManipulation.html">DOM Project</a></li>
     </ul>
-</body>
 
+    <script>
+        // Add fade-in effect to links
+        document.querySelectorAll("a").forEach((link, index) => {
+            link.style.opacity = "0";
+            setTimeout(() => {
+                link.style.transition = "opacity 1s ease-in-out";
+                link.style.opacity = "1";
+            }, index * 300);
+        });
+    </script>
+
+</body>
 
 </html>
