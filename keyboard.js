@@ -3,8 +3,8 @@ const div2 = document.querySelector(".div2");
 const val = document.querySelector(".press");
 const key = document.querySelector(".key-code");
 
-// Load the sound effect
-const keySound = new Audio("keypress.mp3");
+// Load the sound effect  
+const keySound = new Audio("assets/keypress.mp3");
 
 // Array to store key history
 const keyHistory = [];
